@@ -14,3 +14,8 @@ body * [style*="background-image"] {
     filter: hue-rotate(180deg) contrast(100%) invert(100%);
     -webkit-filter: hue-rotate(180deg) contrast(100%) invert(100%);
 }
+
+.invert {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
