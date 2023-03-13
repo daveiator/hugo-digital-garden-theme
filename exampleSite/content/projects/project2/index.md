@@ -3,7 +3,7 @@ title: "Theme Documentation"
 date: 2021-07-01
 draft: false
 project_tags: ["docs", "how-to"]
-status: "seeding"
+status: "fish"
 summary: "Details on how to create and update content on your site"
 weight: 1
 ---
