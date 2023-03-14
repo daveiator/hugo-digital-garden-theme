@@ -96,7 +96,7 @@ table td{
 .card-date {
   font-weight: lighter;
   color: var(--grey);
-  font-size: x-small;
+  font-size: small;
 }
 
 @media(max-width: 990px){
