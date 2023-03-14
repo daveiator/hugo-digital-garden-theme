@@ -1,12 +1,18 @@
-<div class="container">
-    <div class="row justify-content-between">
-        <div class="col-sm-4">
-            <p class="footer">{{ .Site.Copyright }} {{ now.Format "2006"}} </p>
-        </div>
-        <div class="col-sm-6 d-flex flex-row-reverse">
-            {{ range .Site.Params.Social }}
-            <a class="footer-social px-2" {{ with .rel }} rel="{{ . }}" {{ end }} href="{{ .link }}" target="_blank"><i class="{{ .icon }}"></i></a>
-            {{ end }}
-        </div>
+<footer class="container">
+    <hr>
+    <a class="navbar justify-content-center p-2" href="{{ .Site.BaseURL }}">
+        {{ if .Site.Params.Initials }}
+        <b style="font-weight: 800;">{{ .Site.Params.Initials }}</b>
+        {{ else }}
+        <b style="font-weight: 800;">{{ .Site.Params.Name }}</b>
+        {{ end }}
+    </a>
+    <div class="d-flex justify-content-center p-2">
+        {{ range .Site.Params.Social }}
+        <a class="footer-social px-2" {{ with .rel }} rel="{{ . }}" {{ end }} href="{{ .link }}" title="{{.name}}" target="_blank"><i class="{{ .icon }}"></i></a>
+        {{ end }}
     </div>
-</div>
+    <div class="d-flex justify-content-center p-2">
+        <p class="footer">{{ .Site.Copyright }} {{ now.Format "2006"}} </p>
+    </div>
+</footer>

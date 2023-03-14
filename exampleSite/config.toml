@@ -1,61 +1,76 @@
-baseURL = "https://www.example.com"
-languageCode = "en-us"
-title = "My Digital Garden"
+baseURL = "https://www.davidbuehler.de"
+title = "BHLR"
 theme = "hugo-digital-garden-theme"
 themesdir = "../../"
-copyright = "Nigalya Ponya ©"
+copyright = "David Bühler ©"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+  [languages.de]
+    languageName = "Deutsch"
+    weight = 2
+
 
 
 [params]
-  name = "Nigalya Ponya"
-  description = "Red panda living in the eastern Himalayas."
-  initials = "NP"
+  name = "Welcome!"
+  description = "Blogs, projects and other stuff I do."
+  initials = "BHLR"
   googleAnalytics = ""
 
   [[params.social]]
-    name = "Twitter"
-    link = "#"
-    icon = "fab fa-twitter"
-
-  [[params.social]]
     name = "Github"
-    link = "#"
+    link = "https://github.com/daveiator"
     icon = "fab fa-github"
 
   [[params.social]]
-    name = "Medium" 
-    link = "#"
-    icon = "fab fa-medium-m"
+    name = "Mastodon"
+    link = "https://mastodon.social/@daveiator"
+    icon = "fab fa-mastodon"
 
   [[params.social]]
-    name = "LinkedIn"
-    link = "#"
-    icon = "fab fa-linkedin-in"
+    name = "Instagram"
+    link = "https://www.instagram.com/david_bhlr/"
+    icon = "fab fa-instagram"
+
+  [[params.social]]
+  name = "Email"
+  link = "mailto: david@buehler-online.de"
+  icon = "fas fa-at"
+
+  [[params.social]]
+    name = "RSS"
+    link = "/index.xml"
+    icon = "fas fa-rss"
 
 
 [menu]
   [[menu.main]]
-    name = "Digital Garden"
-    url = "/garden/"
+    name = "Pond"
+    url = "/pond/"
     weight = 1
   [[menu.main]]
     name = "Projects"
     url = "/projects/"
     weight = 2
   [[menu.main]]
-    name = "Library"
-    url = "/library/"
-    weight = 3
-  [[menu.main]]
     name = "About"
     url = "/about/"
+    weight = 3
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
     weight = 4
 
 
 [taxonomies]
   garden_tags = 'garden_tags'
   project_tags = 'project_tags'
-  library_tags = 'library_tags'
 
 
 [markup]

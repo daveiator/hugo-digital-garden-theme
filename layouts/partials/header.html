@@ -21,6 +21,21 @@
             <li class="nav-item px-2 pt-1">
                 <a class="btn fas fa-moon" id="dark-mode-toggle"></a>
             </li>
+            {{ if .IsTranslated}}
+           <!-- Button to cicle though languages -->
+                {{ range .Translations }}
+                    <li class="nav-item px-2 pt-1">
+                        <a class="btn p-0 d-inline-flex" href="{{ .Permalink }}">
+                            {{ partial "lang_icon.html" .Lang }}
+                        </a>
+                    </li>
+                {{ end }}
+            {{ else }}
+            <!-- Spacing placeholder-->
+                <li class="nav-item px-2">
+                    <div style="min-width:17px;"></div>
+                </li>
+            {{ end }}
             </ul>
         </div>
     </div>
